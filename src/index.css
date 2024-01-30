@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+body{
+  background-color: #5300d011;
+  color:#000000;
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+*{
+  font-family: 'Inter', sans-serif;
+  margin:0;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #c7c7c779;
+}
+.navbar h1 {
+  color: #5200D0;
+  display: flex;
+  flex-wrap: wrap;
+  /* letter-spacing: -3px; */
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  text-decoration: none;
+  padding: 6px;
+
+  color:#5200D0;
+}
+.navbar a:hover {
+  color: #5200D0;
+}
+.navbar button{
+  color:"#fff";
+  border-radius: 8px;
+  background-color: #5200D0;
+  transition:0.3s ease;
+  border:none;
+  padding: 8px;
+  font-size:15px;
+}
+.navbar button:hover{
+  background: #363636;
+  color: #fff;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.blog-preview{
+  padding: 25px 16px;
+  margin:20px 0;
+  cursor:pointer;
+  transition: 0.3s ease;
+  background-color: #5300d01e;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.205);
+}
+
+.blog-preview:hover{
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+
+.blog-preview h2{
+  font-size:20px;
+  color:#5200D0;
+  margin-bottom: 8px;
+}
+
+@keyframes popin {
+  0%{
+    transform: translateY(-80px);
+    opacity:calc(1)
+  }
+  60%{
+    transform: translateY(10px);
+    opacity:calc(0.5)
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes shimmer {
+  to {
+    background-position: -100% 0;
+  }
+}
+.errorMessage{
+  /* animation: popin ease; */
+  border:rgba(255, 0, 0, 0.329);
+  display:inline-block;
+  text-align:center;
+  transition: 2s ease;
+}
+.blog-details h2 {
+  font-size: 20px;
+  color: #5200D0;
+  margin-bottom: 10px;
+}
+.blog-details div {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+.blog-details span{
+  font-weight: bold;
+  color: #5200D0;
+}
+.blog-details button {
+  background: #d00000;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+.blog-details button:hover{
+  background: #530000;
+  color: #fff;
+}
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #5200D0;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 1rem;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: flex;
+  border-radius: 8px;
+
+}
+.create input:active , .create textarea:active, .create select:active{
+  border:#5200D0 1px solid;
+}
+.create input{
+  height: 50px;
+}
+.create textarea{
+  height:150px;
+
+}
+.create button {
+  background: #5200D0;
+  color: #fff;
+  border: 0;
+  font-size: 1rem;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  max-width:100px;
+  height:40px;
+  margin-top: 20px;
+  transition:0.3s ease;
+}
+.create button:hover{
+  background: #363636;
+}
+
+.page_404{ padding:40px 0; background:transparent; font-family: 'Arvo', serif;
+}
+
+.page_404  img{ width:100%;}
+
+.four_zero_four_bg {
+  position: relative;
+  height: 400px;
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  background-position: center;
+  border:none;
+  margin-top:-50px;
+}
+
+.four_zero_four_bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5300d0; /* Desired overlay color */
+  opacity: 0.8; /* Opacity value (11%) */
+  mix-blend-mode: screen; /* Blend mode for overlaying colors */
+  border:none;
+}
+
+ 
+ 
+ .four_zero_four_bg h1{
+ font-size:80px;
+
+ }
+ 
+  .four_zero_four_bg h3{
+			 font-size:80px;
+			 }
+			 
+			 .link_404{			 
+	color: #fff!important;
+    padding: 10px 20px;
+    background: #5200D0;
+    margin: 40px 0;
+    display: inline-block;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    text-decoration: none;
+  }
+  .link_404:hover{
+    background: #363636;
+
+  }
+	.contant_box_404{ margin-top:-20px;}
+
+  body {
+  font-family: Arial, sans-serif;
+  
+}
+
